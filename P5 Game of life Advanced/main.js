@@ -11,7 +11,7 @@ let isRotating = false;
 let isFlipping = false;
 
 //"test", "demo", "scale", "big"
-let mode = "demo"
+let mode = "big"
 
 let w;
 let cols;
@@ -63,10 +63,18 @@ let replicator = [
   [1, 1, 1, 0, 0],
 ]
 
+let thumbler = [
+  [0, 1, 0, 0, 0, 1, 0],
+  [1, 1, 0, 0, 0, 1, 1],
+  [1, 0, 1, 0, 1, 0, 1],
+  [0, 0, 1, 0, 1, 0, 0],
+  [0, 1, 1, 0, 1, 1, 0],
+  [0, 1, 0, 0, 0, 1, 0],
+]
 
 
 let structureSelector = 0;
-let structures = [glider, lwsp, replicator, eater]
+let structures = [glider, lwsp, replicator, eater, thumbler]
 
 function setup() {
   createCanvas(cols*w, rows*w)

@@ -13,10 +13,10 @@ shortNames = [
 ];
 
 types = [
-    'go', '', 'chest', '', '', 'train', '', 'chance', '', '',
-    'jail', '', '', '', '', 'train', '', 'chest', '', '',
-    '', '', 'chance', '', '', 'train', '', '', '', '',
-    'gotojail', '', '', 'chest', '', 'train', 'chance', '', '', ''
+    'go', '', 'chest', '', 'tax', 'train', '', 'chance', '', '',
+    'jail', '', 'electricity', '', '', 'train', '', 'chest', '', '',
+    '', '', 'chance', '', '', 'train', '', '', 'water', '',
+    'gotojail', '', '', 'chest', '', 'train', 'chance', '', 'ring', ''
 ];
 
 function loopOverTiles() {

@@ -97,7 +97,7 @@ class Ball {
     this.pos = new Vec2(x, y)
     this.w = w
     this.h = w
-    this.speed = 5
+    this.speed = 15
     this.dir = new Vec2(randSign(), randSign())
     this.isCo
   }

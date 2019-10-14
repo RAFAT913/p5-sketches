@@ -31,6 +31,8 @@ function Tile(i, x, y, isCorner, hasHeader, color, side) {
     this.headerWidth = this.width;
     this.headerHeight = this.width/2;
 
+    //players WIP
+    this.players = []
 
     this.init = function() {
       if (this.isCorner) this.width = this.height
@@ -44,7 +46,10 @@ function Tile(i, x, y, isCorner, hasHeader, color, side) {
         case 'jail': image(imgJail, 0, 0, tile_height, tile_height); break;
         case 'gotojail': image(imgGotojail, 0, 0, tile_height, tile_height); break;
         case 'train': image(imgTrain, 0, 0, tile_width, tile_height); break;
-        
+        case 'electricity': image(imgElectricity, 0, 0, tile_width, tile_height); break;
+        case 'water': image(imgWater, 0, 0, tile_width, tile_height); break;
+        case 'ring': image(imgRing, 0, 0, tile_width, tile_height); break;
+        case 'tax': image(imgTax, 0, 0, tile_width, tile_height); break;
       }
     }
 
@@ -55,10 +60,10 @@ function Tile(i, x, y, isCorner, hasHeader, color, side) {
       
       //Card
       fill(this.tileUsedColor)
-      if (this.side == 's') rect(this.x, this.y, this.width, this.height);
-      if (this.side == 'w') rect(this.x, this.y, -this.height, this.width);
-      if (this.side == 'n') rect(this.x, this.y, -this.width, -this.height);
-      if (this.side == 'e') rect(this.x, this.y, this.height, -this.width);
+      if (this.side == 's') rect(this.x, this.y, this.width, this.height)
+      if (this.side == 'w') rect(this.x, this.y, -this.height, this.width)
+      if (this.side == 'n') rect(this.x, this.y, -this.width, -this.height)
+      if (this.side == 'e') rect(this.x, this.y, this.height, -this.width)
 
       //Images
       if (this.type == 'go') image(imgGo, this.x, this.y, tile_height, tile_height);
